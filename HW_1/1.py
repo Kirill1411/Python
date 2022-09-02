@@ -1,9 +1,12 @@
 # Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
+from ctypes.wintypes import BOOL
+
+
 a = int(input('Ведите цисло: '))
-bool = False
+b = False
 
 if a == 6 or a == 7:
-    bool = True
-print (bool)
+    b = True
+print (b)
 

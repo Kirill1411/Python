@@ -4,13 +4,13 @@
 # - A (3,6); B (2,1) -> 5,09
 # - A (7,-5); B (1,-1) -> 7,21
 
-import math
+from math import sqrt
 
 a = int(input('Введите координаты первой точки: x = '))
 a1 = int(input('Введите координаты первой точки: y = '))
 b = int(input('Введите координаты второй точки: x = '))
 b1 = int(input('Введите координаты второй точки: y = '))
 
-distance = math.sqrt( ((a - b)**2) + ((a1 - b1)**2) )
+distance = sqrt(pow(b - a, 2) + pow(b1 - a1, 2))
 
-print(f'Расстояние = {distance}')
+print(round(distance, 3))

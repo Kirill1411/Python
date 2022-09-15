@@ -21,5 +21,7 @@ def polynomial(k:int)->str:
 
 k = int(input('Введите cтепень: '))
 list = polynomial(k)
-with open ('file.txt','w') as my_file:
+with open ('Степень .txt','w') as my_file:  # записывает в файл
     my_file.write(f'k = {k} => {list} \n')
+with open ('Степень .txt','r') as my_file:  # выводит в консоле
+    print(my_file.read())

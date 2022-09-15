@@ -7,7 +7,7 @@ def find_prime_factors(n: int)->list:
     while i <= n:
         if n % i == 0:
             my_list.append(i)
-            n = n/i
+            n /= i
         else:
             i += 1
     return my_list

@@ -40,18 +40,18 @@ else:
         res.append(a[i]+b[i+c])
 print(res)
 
-st = ''
+num = ''
 for i in range(len(res)):
     if m > 2:
-        st = st + f'{res[i]}*x**{m} + '
+        num = num + f'{res[i]}*x**{m} + '
         m -= 1
     elif m == 2:
-        st = st + f'{res[i]}*x + '
+        num = num + f'{res[i]}*x + '
         m -= 1
     else:
-        st = st + f'{res[i]}'
+        num = num + f'{res[i]}'
 
-print(st)
+print(num)
 
 with open('polynom.txt', 'w') as my_file:
-    my_file.write(st)
+    my_file.write(num)

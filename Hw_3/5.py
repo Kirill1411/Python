@@ -10,10 +10,10 @@ x = int(input('Введите число Фибоначчи: '))
 def fib(n):
     if (n == 0):
         return 0
-    elif(n == 1 or n == 2):
+    elif (n == 1 or n == 2):
         return 1
     else:
-        return fib(n-1)+fib(n-2)
+        return fib(n- 1) + fib(n-2)
 
 
 def negafib(n):
@@ -22,11 +22,11 @@ def negafib(n):
     elif (n == -1):
         return 1
     else:
-        return (negafib(n+2)-negafib(n+1))
+        return (negafib(n+2) - negafib(n+1))
 
 
 for i in range(-x, 0):
     print(negafib(i), end=' ')
 
-for i in range(x+1):
+for i in range(x + 1):
     print(fib(i), end=' ')

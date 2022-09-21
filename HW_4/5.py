@@ -55,3 +55,5 @@ print(num)
 
 with open('polynom.txt', 'w') as my_file:
     my_file.write(num)
+
+

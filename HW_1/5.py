@@ -14,3 +14,4 @@ b1 = int(input('Введите координаты второй точки: y =
 distance = sqrt(pow(b - a, 2) + pow(b1 - a1, 2))
 
 print(round(distance, 3))
+
